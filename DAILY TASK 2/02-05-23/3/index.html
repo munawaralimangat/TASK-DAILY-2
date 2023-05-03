@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+
+
+ function isFirstCharIsUperCase(str){
+    const regex = /^[A-Z]/;
+    return regex.test(str);
+ }
+ const userInput = prompt('enter a word');
+
+ const isFirstUppercase = isFirstCharIsUperCase(userInput);
+ 
+ if(isFirstUppercase){
+    document.write('the first charecter of '+ userInput +' is uppercase');
+ }
+ else{
+    document.write('the first charector of ' + userInput +' is not uppercase')
+ }
+
+
+
+
+    </script>
+    
+</body>
+</html>
